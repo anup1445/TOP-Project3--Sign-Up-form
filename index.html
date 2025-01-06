@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="img-form">
+        <!-- Ensured the image scales properly -->
+        <img src="./bg-img.jpg" alt="background image">
+        <div class="form-layout">
+            <div class="para-content">
+                <p>This is not a real online service! You know you need something</p>
+                <p>like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started</p><br>
+                <p>You know you want to</p>
+            </div>
+            
+            <div class="form-content">
+                <div class="fname-email-pass">
+                    <!-- Added placeholder to guide user inputs -->
+                    <div class="input">
+                        <label for="first_name">FIRST NAME</label><br>
+                        <input type="text" id="first_name" placeholder="e.g., Thor" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="user_email">EMAIL</label><br>
+                        <input type="email" id="user_email" placeholder="e.g., thor@example.com" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="user_password">PASSWORD</label><br>
+                        <input type="password" id="user_password" placeholder="8-character password" required maxlength="8">
+                    </div>
+                </div>
+
+                <div class="lname-email-pass">
+                    <div class="input">
+                        <label for="last_name">LAST NAME</label><br>
+                        <input type="text" id="last_name" placeholder="e.g., Odinson" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="phone_number">PHONE NUMBER</label><br>
+                        <input type="text" id="phone_number" placeholder="91+ 1234567890" required maxlength="10">
+                    </div>
+
+                    <div class="input">
+                        <label for="confirm_password">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="confirm_password" placeholder="Retype your password" required maxlength="8">
+                    </div>
+                </div>
+            </div>
+
+            <div class="btm-content">
+                <!-- Improved button accessibility -->
+                <button type="submit" aria-label="Create your account">Create Account</button>
+                <p>Already have an account? <a href="#">Log In</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

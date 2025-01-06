@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Improved image scaling and centering */
+img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; /* Ensures image doesn't distort */
+}
+
+.img-form {
+    display: flex;
+    align-items: center; /* Vertically centers the form */
+}
+
+/* Styled semi-transparent background */
+.form-layout {
+    background-color: rgba(0, 0, 0, 0.6); /* Added transparency */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto; /* Centers the form */
+}
+
+.para-content {
+    padding: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px; /* Added spacing between columns */
+}
+
+.fname-email-pass,
+.lname-email-pass {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Added spacing between input fields */
+}
+
+.input input {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Input focus and validation improvements */
+.input input:focus {
+    border: 2px solid #3b82f6; /* Blue border for focus */
+    box-shadow: 0 0 5px #3b82f6;
+    outline: none; /* Removed default outline */
+}
+
+.input input:invalid {
+    border: 2px solid red; /* Red border for invalid inputs */
+}
+
+.btm-content {
+    text-align: center; /* Centered button and text */
+    padding-top: 20px;
+}
+
+.btm-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #596D48; /* Color specified in instructions */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+.btm-content button:hover {
+    background-color: #4a5b3f; /* Subtle hover effect */
+}
+
+.btm-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
